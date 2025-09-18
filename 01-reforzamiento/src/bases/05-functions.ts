@@ -1,11 +1,11 @@
 function greet (name: string) :string /*Valor de retorno*/ {
-    return `Hola ${name}`
+    return `Hello ${name}`
 }
 const message = greet('Goku');
 console.log(message);
 
 //Arrow Function
-const greet2 = (name:string) :string => `Hola ${name}`;
+const greet2 = (name:string) :string => `Hello ${name}`;
 console.log(greet2('Vegeta'));
 
 //Ejercicio
