@@ -4,6 +4,14 @@ import './bases/04-arrays'
 import './bases/05-functions'
 import './bases/06-obj-destructuring'
 import './bases/07-arrays-destructuring'
+import './bases/08-imp-exp'
+//EJERCICIO
+import { getHeroesByOwner } from './bases/08-imp-exp'
+import { Owner } from './data/heroes-data'
+console.log(getHeroesByOwner(Owner.DC));
+
+
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = 
 `
   <div>
