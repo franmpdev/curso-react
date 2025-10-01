@@ -1,4 +1,6 @@
-import { MyAwesomeApp } from "./MyAwesomeApp"
+
+import { ItemCounter } from './shopping-cart/ItemCounter'
+
 export function PrimerosPasosApp(){
     return (
     <>    
@@ -8,8 +10,9 @@ export function PrimerosPasosApp(){
         <div>
         <h2>Hola dentro de un div</h2>
         </div>
-        <MyAwesomeApp/>
-
+        <ItemCounter></ItemCounter>
+        <ItemCounter></ItemCounter>
+        <ItemCounter></ItemCounter>
         </>
 
     )
