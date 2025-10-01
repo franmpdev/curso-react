@@ -10,9 +10,9 @@ export function PrimerosPasosApp(){
         <div>
         <h2>Hola dentro de un div</h2>
         </div>
-        <ItemCounter></ItemCounter>
-        <ItemCounter></ItemCounter>
-        <ItemCounter></ItemCounter>
+        <ItemCounter itemName="Nintendo Switch 2"></ItemCounter>
+        <ItemCounter itemName="PlayStation 5"></ItemCounter>
+        <ItemCounter itemName="Xbox Series X"></ItemCounter>
         </>
 
     )

@@ -1,10 +1,14 @@
 import type { CSSProperties } from "react"
-
-export function CustomButton (){
+interface Props{
+    message: string;
+    click: ()=> void;
+    backgroundColor?: string;
+}
+export function CustomButton ({message, click, backgroundColor}: Props){
     const cssButton: CSSProperties = {
         padding: '10px 20px',
         fontSize: '16px',
-        backgroundColor: '#007bff',
+        backgroundColor: backgroundColor ?? 'white',
         color: '#fff',
         border: 'none',
         borderRadius: '5px',
@@ -13,7 +17,7 @@ export function CustomButton (){
     }
     return (
         <>
-            <button style={cssButton} onClick={() => console.log('click')}>Click Me!</button>
+            <button style={cssButton} onClick={() => {click()}}>{message}</button>
         </>
     )
 }

@@ -1,7 +1,11 @@
 import { useState, type CSSProperties } from "react"
 import { CustomButton } from "../components/CustomButton"
 
-export const ItemCounter = ()=> {
+
+interface Props{
+    itemName: string;
+}
+export const ItemCounter = ({itemName}: Props)=> {
     const cssSection: CSSProperties = {
         display: 'flex',
         flexDirection: 'row',
@@ -10,14 +14,19 @@ export const ItemCounter = ()=> {
         marginTop: '20px'
     }
     const [count, setCount] = useState(1)
+    const increaseCount = ()=>{
+        setCount(count + 1)
+    }
+    const decreaseCount = ()=>{
+        setCount(count-1);
+    }
+
     return (
         <section style={cssSection}>
-            <h3>Nintendo switch 2</h3>
-            <CustomButton /> 
-            <button onClick={() => setCount(count - 1)}>-</button>
+            <h3>{itemName}</h3>
+            <CustomButton message="-" click={decreaseCount} backgroundColor="gray"/> 
             <p>{count}</p>
-            <button onClick={() => setCount(count + 1)}>+</button>
-            <CustomButton />
+            <CustomButton message="+" click={increaseCount} backgroundColor="skyblue"/>
         </section>
     ) 
 }
