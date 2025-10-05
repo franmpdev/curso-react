@@ -4,8 +4,9 @@ import { CustomButton } from "../components/CustomButton"
 
 interface Props{
     itemName: string;
+    quantity: number;
 }
-export const ItemCounter = ({itemName}: Props)=> {
+export const ItemCounter = ({itemName, quantity}: Props)=> {
     const cssSection: CSSProperties = {
         display: 'flex',
         flexDirection: 'row',
@@ -13,7 +14,7 @@ export const ItemCounter = ({itemName}: Props)=> {
         gap: '20px',
         marginTop: '20px'
     }
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(quantity)
     const increaseCount = ()=>{
         setCount(count + 1)
     }
