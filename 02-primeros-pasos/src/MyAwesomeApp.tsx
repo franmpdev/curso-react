@@ -21,7 +21,7 @@ export function MyAwesomeApp(){
     return (
         <>
             <h1>Ejercicio de componente realizado</h1>
-            <h2 style={myStyles}> {name} {lastName}</h2>
+            <h2 data-testid="first-name-title" style={myStyles}> {name} {lastName}</h2>
             <p>{favGames.join(', ')}</p>
             <h1>{isActive ? 'Active' : 'Inactive'}</h1>
             <p>{JSON.stringify(address)}</p>
