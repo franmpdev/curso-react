@@ -20,9 +20,5 @@ export function CustomButton ({message, customClick, backgroundColor}: Props){
         cursor: 'pointer',
         transition: 'background-color 0.3s',
     }
-    return (
-        <>
-            <button style={cssButton} onClick={() => {customClick()}}>{message}</button>
-        </>
-    )
+    return <button style={cssButton} onClick={() => {customClick()}}>{message}</button>
 }
