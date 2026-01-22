@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { mockGifs } from './mock-data/gifs.mock'
 import { CustomHeader } from './shared/components/CustomHeader'
 import { SearchBar } from './shared/components/SearchBar'
@@ -6,6 +6,14 @@ import { PreviousSearches } from './gifs/components/PreviousSearches'
 import { GifsList } from './gifs/components/GifsList'
 
 const GifsApp = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [searches, setSearches] = useState(['dragon ball z', 'freezer'])
+  const handleSearchClick = (search: string) =>{
+    console.log({search})
+  }
+  const controladorSearches = (query: string) => {
+    console.log({query})
+  }
   return (
     <>
         <CustomHeader 
@@ -15,11 +23,11 @@ const GifsApp = () => {
 
         {/*Crear componente SearchBar*/}
 
-        <SearchBar placeholder='Buscador general'/>
+        <SearchBar onQuery={controladorSearches} placeholder='Buscador general'/>
 
         {/*Crear componente PreviousSearches*/}
 
-        <PreviousSearches/>
+        <PreviousSearches searches={searches} onLabelClicked={handleSearchClick}/>
         
         {/*Crear componente GifList: Props => gifs: Gif[]*/}
 
