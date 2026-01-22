@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1769006408842" clover="3.2.0">
+  <project timestamp="1769006408842" name="All files">
+    <metrics statements="25" coveredstatements="25" conditionals="8" coveredconditionals="5" methods="10" coveredmethods="10" elements="43" coveredelements="40" complexity="0" loc="25" ncloc="25" packages="4" files="5" classes="5"/>
+    <package name="src">
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="MyAwesomeApp.tsx" path="C:\Users\fran1\OneDrive\Desktop\Cursos Udemy\REACT\02-primeros-pasos\src\MyAwesomeApp.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="CustomButton.tsx" path="C:\Users\fran1\OneDrive\Desktop\Cursos Udemy\REACT\02-primeros-pasos\src\components\CustomButton.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.helpers">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="math.helper.ts" path="C:\Users\fran1\OneDrive\Desktop\Cursos Udemy\REACT\02-primeros-pasos\src\helpers\math.helper.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shopping-cart">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="ItemCounter.css" path="C:\Users\fran1\OneDrive\Desktop\Cursos Udemy\REACT\02-primeros-pasos\src\shopping-cart\ItemCounter.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ItemCounter.tsx" path="C:\Users\fran1\OneDrive\Desktop\Cursos Udemy\REACT\02-primeros-pasos\src\shopping-cart\ItemCounter.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

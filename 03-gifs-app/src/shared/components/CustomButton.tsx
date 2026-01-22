@@ -1,6 +1,3 @@
-// Este CustomButton es flexible: acepta mensaje, función de clic y color opcional.
-// Lo uso en ItemCounter para botones de + y -, pasando funciones personalizadas.
-// Esto evita código duplicado y hace el código más mantenible.
 
 import type { CSSProperties } from "react"
 interface Props{
@@ -10,7 +7,7 @@ interface Props{
 }
 export function CustomButton ({message, customClick, backgroundColor}: Props){
     const cssButton: CSSProperties = {
-        padding: '5px 10px',
+        padding: '10px',
         fontSize: '16px',
         backgroundColor: backgroundColor ?? 'white',
         color: '#fff',

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { add, substract, multiply } from './math.helper'
+import { add, substract, multiply, divide } from './math.helper'
 describe('add function test', ()=>{
     test('should add two numbers', ()=>{
         // ! 1. Arrange
@@ -31,6 +31,17 @@ describe('multiply function test', ()=>{
         const result = multiply(n1,n2)
         // ! 3. Assert
         expect(result).toBe(n1*n2)
+    })
+})
+describe('divide function test', ()=>{
+    test('should divide two numbers', ()=>{
+        // ! 1. Arrange
+        const n1 = 4;
+        const n2 = 2;
+        // ! 2. Act
+        const result = divide(n1,n2)
+        // ! 3. Assert
+        expect(result).toBe(n1/n2)
     })
 })
 //ASEGURA QUE LA APLICACIÓN FUNCIONE CORRECTAMENTE PUNTO POR PUNTO
